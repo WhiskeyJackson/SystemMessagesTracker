@@ -1,18 +1,34 @@
-package org.spectraLogic.systemMessagesTracker.systemMessages;
+package org.spectraLogic.systemMessagesTracker.metric.systemMessages;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(namespace = "org.spectraLogic.systemMessagesTracker.systemMessages.SystemMessages")
-public class Message {
+import org.spectraLogic.systemMessagesTracker.database.Column;
+import org.spectraLogic.systemMessagesTracker.database.Table;
+import org.spectraLogic.systemMessagesTracker.metric.Metric;
 
-	private String numberOccurrences = "";
-	private String number = "";
-	private String severity = "";
+@Table(name = "system_messages")
+@XmlRootElement(namespace = "org.spectraLogic.systemMessagesTracker.systemMessages.SystemMessages")
+public class Message implements Metric {
+
+	@Column(name = "number_occurrences")
+	public String numberOccurrences = "";
+
+	@Column(name = "number")
+	public String number = "";
+
+	@Column(name = "severity")
+	public String severity = "";
+
+	@Column(name = "notification")
+	public String notification = "";
+
+	@Column(name = "remedy")
+	public String remedy = "";
+
 	private BlueScaleDate date = new BlueScaleDate();
 	private BlueScaleTime time = new BlueScaleTime();
-	private String notification = "";
-	private String remedy = "";
+
 
 	@XmlElement(name = "numberOccurrences")
 	public String getNumberOccurrences() {

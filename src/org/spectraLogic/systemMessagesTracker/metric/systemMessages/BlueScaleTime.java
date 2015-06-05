@@ -1,4 +1,4 @@
-package org.spectraLogic.systemMessagesTracker.systemMessages;
+package org.spectraLogic.systemMessagesTracker.metric.systemMessages;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

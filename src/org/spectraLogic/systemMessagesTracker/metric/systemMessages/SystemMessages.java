@@ -1,4 +1,4 @@
-package org.spectraLogic.systemMessagesTracker.systemMessages;
+package org.spectraLogic.systemMessagesTracker.metric.systemMessages;
 
 import java.io.InputStream;
 import java.util.ArrayList;

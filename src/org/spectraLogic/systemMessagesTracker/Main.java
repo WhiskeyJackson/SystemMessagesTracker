@@ -15,7 +15,7 @@ import javax.xml.bind.JAXBException;
 import org.spectraLogic.systemMessagesTracker.commandLine.CommandLineOptions;
 import org.spectraLogic.systemMessagesTracker.database.MessagesDatabase;
 import org.spectraLogic.systemMessagesTracker.http.HttpClient;
-import org.spectraLogic.systemMessagesTracker.systemMessages.SystemMessages;
+import org.spectraLogic.systemMessagesTracker.metric.systemMessages.SystemMessages;
 
 public class Main {
 

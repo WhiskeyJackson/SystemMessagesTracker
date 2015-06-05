@@ -12,10 +12,10 @@ import java.util.Date;
 import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
-import org.spectraLogic.systemMessagesTracker.systemMessages.BlueScaleDate;
-import org.spectraLogic.systemMessagesTracker.systemMessages.BlueScaleTime;
-import org.spectraLogic.systemMessagesTracker.systemMessages.Message;
-import org.spectraLogic.systemMessagesTracker.systemMessages.SystemMessages;
+import org.spectraLogic.systemMessagesTracker.metric.systemMessages.BlueScaleDate;
+import org.spectraLogic.systemMessagesTracker.metric.systemMessages.BlueScaleTime;
+import org.spectraLogic.systemMessagesTracker.metric.systemMessages.Message;
+import org.spectraLogic.systemMessagesTracker.metric.systemMessages.SystemMessages;
 
 public class MessagesDatabase {
 	private static final String dataBaseUrl = "jdbc:mysql://10.10.10.77:3306/metrics";
